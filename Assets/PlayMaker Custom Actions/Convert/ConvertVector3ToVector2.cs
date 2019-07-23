@@ -1,4 +1,4 @@
-// (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
+// (c) Copyright HutongGames, LLC 2010-2019. All rights reserved.
 // original action by collidernyc (http://hutonggames.com/playmakerforum/index.php?topic=7769.0)
 /*--- __ECO__ __PLAYMAKER__ __ACTION__ ---*/
 
@@ -6,9 +6,9 @@ using UnityEngine;
 
 namespace HutongGames.PlayMaker.Actions
 {
-	[ActionCategory(ActionCategory.Vector2)]
+	[ActionCategory(ActionCategory.Convert)]
 	[Tooltip("Store a Vector3 XY component into a Vector2 XY component. Drops the Vector3 z component, you can optionally save it to a float.")]
-	public class Vector3ToVector2 : FsmStateAction
+	public class ConvertVector3ToVector2 : FsmStateAction
 	{
 		
 		[UIHint(UIHint.Variable)]
@@ -35,7 +35,7 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnEnter()
 		{
-			ConvertVector3toVector2();
+			ExecuteAction();
 			
 			if (!everyFrame)
 			{
@@ -45,10 +45,10 @@ namespace HutongGames.PlayMaker.Actions
 		
 		public override void OnUpdate()
 		{
-			ConvertVector3toVector2();
+			ExecuteAction();
 		}
 
-		void ConvertVector3toVector2()
+		void ExecuteAction()
 		{
 			vector2.Value = new Vector2(vector3.Value.x,vector3.Value.y);
 			
