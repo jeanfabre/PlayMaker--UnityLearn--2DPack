@@ -1,6 +1,5 @@
 // (c) Copyright HutongGames, LLC 2010-2014. All rights reserved.
 // original action by collidernyc (http://hutonggames.com/playmakerforum/index.php?topic=7769.0)
-//--- __ECO__ __ACTION__ ---//
 
 using UnityEngine;
 
@@ -8,7 +7,7 @@ namespace HutongGames.PlayMaker.Actions
 {
 	[ActionCategory(ActionCategory.Vector2)]
 	[Tooltip("Store a Vector3 XY component into a Vector2 XY component. Drops the Vector3 z component, you can optionally save it to a float.")]
-	public class Vector3toVector2 : FsmStateAction
+	public class Vector3ToVector2 : FsmStateAction
 	{
 		
 		[UIHint(UIHint.Variable)]

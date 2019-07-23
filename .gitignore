@@ -34,3 +34,7 @@ Chili4U.meta
 Assets/net.fabrejean
 net.fabrejean.meta
 uTomate.meta
+.idea
+Assets/Plugins/Editor/JetBrains
+JetBrains.meta
+Assets/Plugins/PlayMaker
